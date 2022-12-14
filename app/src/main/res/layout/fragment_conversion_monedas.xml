@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerConversion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral50"
+    tools:context=".ConversionMonedas">
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="352dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/material_dynamic_primary30"
+        android:text="@string/volver"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloDivisas"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="352dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:hint="@string/resultado"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="352dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/conversor_de_monedas"
+            android:focusable="auto"
+            android:keyboardNavigationCluster="true"
+            android:popupBackground="@color/material_dynamic_neutral30"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@+id/resultado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTituloDivisas"
+            app:layout_constraintVertical_bias="0.976" />
+
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="352dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/cantidad_a_convertir"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloDivisas"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/valueMoney"
+        android:layout_width="352dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:hint="@string/valor_de_la_divisa_a_convertir"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtCantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imagen"
+        android:src="@drawable/monedas_removebg_preview"
+        app:layout_constraintBottom_toTopOf="@+id/valueMoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloDivisas"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtTituloDivisas"
+        android:layout_width="411dp"
+        android:layout_height="62dp"
+        android:background="@color/material_dynamic_primary40"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/divisas"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">App Conversor de Divisas 3.0</string>
+    <string name="men_principal">Menú Principal</string>
+    <string name="conversor_de_divisas">Conversor de Divisas</string>
+    <string name="conversor_de_monedas">Conversor de Monedas</string>
+    <string name="toast">Toast</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="estilo_de_botones">Estilo de Botones</string>
+    <string name="bot_n_verde">Botón Verde</string>
+    <string name="bot_n_rojo">Botón Rojo</string>
+    <string name="btnRed">Botón Rojo</string>
+    <string name="btnGreen">Botón Verde</string>
+    <string name="volver_al_men_principal">Volver al Menú Principal</string>
+    <string name="divisas">Conversor de Divisas</string>
+    <string name="valor_de_la_divisa_a_convertir">Valor de la divisa a convertir</string>
+    <string name="resultado">Resultado</string>
+    <string name="volver">Volver al Menú Principal</string>
+    <string name="cantidad_a_convertir">Cantidad a convertir</string>
+    <string name="convertir">Convertir</string>
+    <string name="imagen">imagen</string>
+    <string name="cerrar_actividad">Cerrar Actividad</string>
+</resources>
